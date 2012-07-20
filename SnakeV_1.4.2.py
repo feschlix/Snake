@@ -1,4 +1,4 @@
-#coding: latin1
+# -*- coding: cp1252 -*-
 
 from OpenGL.GL import *
 from OpenGL.GLU import *
@@ -71,23 +71,23 @@ class Playground(object):
             
         self.width  = x
         self.height = y
-        print self.width, " -> ", self.height
+        print (self.width, " -> ", self.height)
 
     def collisionDetection(self, newHeadPosition):
         if newHeadPosition in self.exitPosition:
-            print "exit collision"
+            print ("exit collision")
             return Snake.PASSEXIT
         
         elif newHeadPosition in self.snakePosition:
-            print "self collision"
+            print ("self collision")
             return Snake.COLLISION
         
         elif newHeadPosition in self.barPositions:
-            print "bar collision"
+            print ("bar collision")
             return Snake.COLLISION
         
         elif newHeadPosition in self.applePositions:
-            print "apple collision"
+            print ("apple collision")
             self.applePositions.remove(newHeadPosition)
             return Snake.EATAPPLE
         
@@ -100,7 +100,7 @@ commands        = []
 playground      = Playground()
 snake           = Snake(playground)
 
-def resize((width, height)):
+def resize(width, height):
     if height == 0:
         height = 1
     glViewport(0, 0, width, height)
@@ -179,7 +179,7 @@ def showASCIIArt(fileName, delay):
     pygame.time.delay(delay)
         
 def showGameOver():
-    print "GAMEOVER"
+    print ("GAMEOVER")
     showASCIIArt("GameOver.txt", 3000)
     global currentLevel
     global NEXT_LEVEL
@@ -190,19 +190,19 @@ def showGameOver():
     restartGame()
         
 def showYouWon():
-    print "WINNER"
+    print ("WINNER")
     global currentLevel
     global NEXT_LEVEL
     global VERSUCH
     currentlevel = 1
     try:
-        print "TRY 1"
+        print ("TRY 1")
         NEXT_LEVEL += 1
-        print "LEVAELANEXT", NEXT_LEVEL
+        print ("LEVAELANEXT"), NEXT_LEVEL
     except:
-        print "EXCEPT1"
+        print ("EXCEPT1")
         NEXT_LEVEL = 2
-        print "ZEILE 182 ist der Fehler"
+        print ("ZEILE 182 ist der Fehler")
     showASCIIArt("YouWon.txt", 5000)
     loadNextLevel(NEXT_LEVEL)
 

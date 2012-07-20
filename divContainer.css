@@ -1,0 +1,152 @@
+body {
+    background-color: #000000;
+    text-align: center;
+}
+
+#rand {
+    border-color: #1111ff;
+    border-style: solid;
+    border-width: 20px;
+    width: 70%;
+    margin: 15%;
+    margin-top: 30px;
+    color: white;
+    padding: 5px;
+    text-align: left;
+    height: 70%;
+}
+
+span.active {  
+    background-color: white;
+    color: black;
+    font-size: 135%;
+}
+
+a {
+    color: #3333ff;
+    font-size: 135%;
+    text-decoration: none;
+}
+
+a:hover { 
+    color: black;
+    background-color: white;
+    font-size: 135%;
+    text-decoration: none;
+}
+
+h1 {
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #888888;
+    border-width: 2px;
+    padding: 1px;
+    padding-left: 5px;
+    margin: 7px;
+    margin-left: 3%;
+    margin-top: 10px;
+    width: 55%;
+    color: black;
+    
+}
+
+h2 {
+    border-color: blue;
+    border-bottom-width: 4px;
+    border-left-width: 15px;
+    border-style: solid;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    width: 45%;
+    margin-left: 1%;
+    padding-left: 7px;
+}
+
+p {
+    font-size: 110%;
+}
+    
+.dotted {
+    border-style: dotted;
+    border-width: 3px;
+    border-color: #ffff00;
+    margin: 20px;
+    margin-left: 5%;
+    padding: 3px;
+    padding-left: 15px;
+    width: 70%;
+}
+
+.dotted.thick {
+    border-width: thick;
+}
+
+.double {
+    border-style: double;                          
+    border-color: red;
+    border-width: thick;
+    margin: 20px;
+    margin-left: 5%;
+    padding: 3px;
+    padding-left: 15px;
+    width: 70%;
+}
+
+.einfach {
+    border-style: solid;
+    border-width: 5px;
+    margin: 3%;
+    padding: 0.5%;
+    border-color: white;
+}
+
+.einfach.rot {
+    border-color: red;
+}
+
+.einfach.rot.tabelle {
+    height: 100%;
+}
+
+.einfach.blau {
+    border-color: blue;
+}
+
+.einfach.gruen {
+    border-color: green;
+}
+
+.einfach.gelb {
+    border-color: yellow;
+}
+
+.einfachlinks {
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    width: 47%;
+    margin: 0.2%;
+    padding: 0.15%;
+    float: left;
+}
+
+.einfachrechts {
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    width: 47%;
+    margin: 0.2%;
+    padding: 0.15%;
+    float: right;
+}
+
+.prozent45 {
+    width: 45%;
+    margin: 0.5%;
+}
+
+
+.prozent29k8 {
+    width: 30%;
+    margin: 0.4%;
+}
